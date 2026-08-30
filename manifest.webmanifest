@@ -1,0 +1,9 @@
+{
+  "name": "Dziennik IP",
+  "short_name": "Dziennik IP",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#111827",
+  "lang": "pl"
+}

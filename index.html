@@ -1,27 +1,47 @@
 <!doctype html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#166534">
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="styles.css">
-<title>Dziennik IP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="Dziennik IP – gospodarstwo, działki, zabiegi, obserwacje, nawożenie i raporty.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Dziennik IP</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
-<div class="app">
-<header class="topbar">
-  <div><div class="eyebrow">GOSPODARSTWO</div><h1>Dziennik IP</h1></div>
-  <button class="avatar" id="profile">👤</button>
-</header>
-<main id="content"></main>
-<nav class="bottom-nav">
-  <button data-page="home" class="active">⌂<small>Start</small></button>
-  <button data-page="farm">🌳<small>Gospodarstwo</small></button>
-  <button data-page="sprays">🧪<small>Zabiegi</small></button>
-  <button data-page="history">☷<small>Historia</small></button>
-</nav>
-</div>
-<script src="app.js"></script>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">GOSPODARSTWO</div>
+        <h1>Dziennik IP</h1>
+      </div>
+      <button class="icon-btn" id="profileBtn" aria-label="Profil">👤</button>
+    </header>
+
+    <main id="screen"></main>
+
+    <nav class="bottom-nav" aria-label="Nawigacja">
+      <button data-route="dashboard">⌂<span>Start</span></button>
+      <button data-route="farm">🌳<span>Gospodarstwo</span></button>
+      <button data-route="treatments">🧪<span>Zabiegi</span></button>
+      <button data-route="history">☷<span>Historia</span></button>
+      <button data-route="more">•••<span>Więcej</span></button>
+    </nav>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

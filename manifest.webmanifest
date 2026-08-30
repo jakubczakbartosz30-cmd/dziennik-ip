@@ -3,7 +3,7 @@
   "short_name": "Dziennik IP",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f7f8f5",
-  "theme_color": "#111827",
+  "theme_color": "#187744",
+  "background_color": "#f5f7f5",
   "lang": "pl"
 }

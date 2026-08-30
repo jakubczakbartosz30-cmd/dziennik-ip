@@ -1,29 +1,10 @@
-# Dziennik IP – pełna wersja
+Dziennik IP – wersja docelowa
 
-Gotowa, mobilna aplikacja PWA działająca jako statyczna strona na Vercel.
+Pliki wrzuć bezpośrednio do głównego katalogu repozytorium GitHub:
+- index.html
+- styles.css
+- app.js
+- manifest.webmanifest
 
-## Zawartość
-- Panel główny
-- Gospodarstwo
-- Działki i kwatery + mapa
-- Dodaj Zabieg
-- Historia zabiegów z wyszukiwaniem
-- Obserwacje
-- Nawożenie
-- Dziennik IP
-- Dokumenty
-- Raporty / druk do PDF
-- Eksport kopii danych do JSON
-- zapis danych w pamięci urządzenia (localStorage)
-- PWA / możliwość dodania do ekranu głównego
-
-## Wdrożenie
-Na GitHubie repozytorium powinno zawierać bezpośrednio:
-index.html
-styles.css
-app.js
-manifest.webmanifest
-
-Po wypchnięciu zmian Vercel powinien automatycznie wykonać nowe wdrożenie.
-
-Mapa korzysta z OpenStreetMap przez Leaflet, więc do działania mapy potrzebne jest połączenie z internetem.
+Mapa jest osobnym ekranem i nie znajduje się w formularzu działki.
+Dane wpisów są zapisywane lokalnie w przeglądarce.
